@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KSM Nasional 2024 Maluku Utara</title>
+    <title>Kartu Nama Peserta</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         @keyframes fadeIn {
@@ -63,24 +63,24 @@
         }
 
         .welcome-text {
-            font-size: 36px;
+            font-size: 24px;
             font-weight: 600;
             color: #fff;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
             text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
             animation: fadeIn 1s ease-out;
         }
 
         .welcome-text span {
             display: block;
-            font-size: 24px;
+            font-size: 18px;
             font-weight: normal;
             color: #d9f2d9;
             margin: 5px 0;
         }
 
         .welcome-image {
-            width: 300px;
+            width: 200px;
             height: auto;
             margin-bottom: 20px;
             animation: fly 2s infinite;
@@ -88,10 +88,10 @@
 
         .start-button {
             display: block;
-            padding: 15px 30px;
+            padding: 10px 20px;
             background: linear-gradient(135deg, #4caf50, #388e3c);
             color: #fff;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 600;
             text-decoration: none;
             border-radius: 25px;
@@ -101,17 +101,11 @@
             animation: slideUp 1s ease-out;
             cursor: pointer;
             font-family: 'Poppins', sans-serif;
-            aria-label: "Mulai";
-            tabindex: 0;
         }
 
         .start-button:hover {
             background: linear-gradient(135deg, #388e3c, #4caf50);
             transform: scale(1.05);
-        }
-
-        .start-button:focus {
-            outline: none;
         }
 
         .card-container {
@@ -126,24 +120,26 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: -40px;
+            margin-bottom: -20px;
             position: relative;
+            flex-wrap: wrap;
         }
 
         .logos img {
-            width: 60px;
-            height: 60px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
             border: 3px solid #fff;
             background-color: #fff;
-            margin: 0 12px;
+            margin: 0 8px;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
             animation: fadeIn 1s ease-out;
         }
 
         .card {
-            width: 360px;
-            padding: 20px;
+            width: 90%;
+            max-width: 360px;
+            padding: 15px;
             background: linear-gradient(135deg, #b2dfdb, #004d40);
             border-radius: 15px;
             box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
@@ -152,7 +148,7 @@
             animation: fadeIn 1.2s ease-out;
             border: 2px solid #009688;
             overflow: hidden;
-            margin-top: 80px;
+            margin-top: 40px;
             z-index: 2;
         }
 
@@ -171,8 +167,8 @@
 
         .card img {
             border-radius: 50%;
-            width: 120px;
-            height: 120px;
+            width: 80px;
+            height: 80px;
             margin-bottom: 16px;
             border: 4px solid #fff;
             background-color: #fff;
@@ -183,14 +179,14 @@
 
         .card h2 {
             margin: 0 0 8px;
-            font-size: 28px;
+            font-size: 24px;
             color: #004d40;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
         }
 
         .card p {
             margin: 4px 0;
-            font-size: 20px;
+            font-size: 18px;
             font-weight: bold;
         }
 
@@ -199,20 +195,20 @@
         .card .gender,
         .card .education {
             background-color: #fff;
-            padding: 10px;
+            padding: 8px;
             border-radius: 10px;
             margin-top: 10px;
-            font-size: 16px;
+            font-size: 14px;
             color: #004d40;
             border: 2px solid #009688;
         }
 
         .explore-button {
             display: none;
-            padding: 15px 30px;
+            padding: 10px 20px;
             background: linear-gradient(135deg, #4caf50, #388e3c);
             color: #fff;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 600;
             text-decoration: none;
             border-radius: 25px;
@@ -223,17 +219,11 @@
             position: relative;
             z-index: 2;
             font-family: 'Poppins', sans-serif;
-            aria-label: "Explore Ternate";
-            tabindex: 0;
         }
 
         .explore-button:hover {
             background: linear-gradient(135deg, #388e3c, #4caf50);
             transform: scale(1.05);
-        }
-
-        .explore-button:focus {
-            outline: none;
         }
 
         .additional-buttons {
@@ -242,16 +232,17 @@
             text-align: center;
             z-index: 2;
             position: relative;
+            flex-wrap: wrap;
         }
 
         .additional-buttons a {
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 15px 30px;
+            padding: 10px 20px;
             background: #009688;
             color: #fff;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 600;
             text-decoration: none;
             border-radius: 25px;
@@ -261,8 +252,6 @@
             animation: slideIn 0.6s ease-out;
             font-family: 'Poppins', sans-serif;
             cursor: pointer;
-            aria-label: "Explore Section";
-            tabindex: 0;
         }
 
         .additional-buttons a img {
@@ -279,118 +268,131 @@
             background: #fff;
             padding: 20px;
             border-radius: 15px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-            width: 80%;
-            max-width: 600px;
-            margin: 20px;
-            text-align: center;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+            animation: fadeIn 0.8s ease-out;
             position: relative;
             z-index: 2;
-            animation: slideIn 0.6s ease-out;
-        }
-
-        .section h2 {
-            margin-top: 0;
-            color: #00796b;
         }
 
         .back-button {
             display: none;
-            padding: 15px 30px;
-            background: linear-gradient(135deg, #d32f2f, #c62828);
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #ff5252, #ff1744);
             color: #fff;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 600;
             text-decoration: none;
             border-radius: 25px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-            transition: background 0.3s, transform 0.3s;
             margin-top: 20px;
-            position: absolute;
-            top: 20px;
-            right: 20px;
+            transition: background 0.3s, transform 0.3s;
+            animation: fadeIn 1.2s ease-out;
+            position: relative;
             z-index: 2;
             font-family: 'Poppins', sans-serif;
             cursor: pointer;
-            aria-label: "Kembali";
-            tabindex: 0;
         }
 
         .back-button:hover {
-            background: linear-gradient(135deg, #c62828, #d32f2f);
+            background: linear-gradient(135deg, #ff1744, #ff5252);
             transform: scale(1.05);
         }
 
-        .back-button:focus {
-            outline: none;
+        @media only screen and (max-width: 600px) {
+            .welcome-text {
+                font-size: 20px;
+            }
+
+            .welcome-text span {
+                font-size: 16px;
+            }
+
+            .start-button, .explore-button, .back-button {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+
+            .card {
+                width: 100%;
+                padding: 10px;
+            }
+
+            .card h2 {
+                font-size: 20px;
+            }
+
+            .card p {
+                font-size: 16px;
+            }
+
+            .card img {
+                width: 60px;
+                height: 60px;
+            }
+
+            .additional-buttons a {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+
+            .section {
+                padding: 10px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="overlay"></div>
-
-    <!-- Welcome Message -->
     <div class="welcome-container">
+        <img src="bird.png" alt="Welcome Image" class="welcome-image" id="welcomeImage">
         <div class="welcome-text">
-            <span>Selamat Datang</span>
-            <span>Peserta KSM Nasional dan Myress</span>
+            Selamat Datang di <br> Kompetisi Sains Madrasah
+            <span>Klik tombol Mulai untuk melanjutkan</span>
         </div>
-        <img src="burung.png" alt="Selamat Datang" class="welcome-image" id="welcomeImage">
-        <a class="start-button" id="startButton" aria-label="Mulai">Mulai</a>
+        <a href="#" class="start-button" id="startButton">Mulai</a>
     </div>
 
-    <!-- Kartu Nama -->
     <div class="card-container" id="cardContainer">
         <div class="logos">
-            <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Logo 1">
-            <img src="https://www.w3schools.com/w3images/avatar6.png" alt="Logo 2">
-            <img src="https://www.w3schools.com/w3images/avatar5.png" alt="Logo 3">
+            <img src="https://via.placeholder.com/40" alt="Logo 1">
+            <img src="https://via.placeholder.com/40" alt="Logo 2">
+            <img src="https://via.placeholder.com/40" alt="Logo 3">
         </div>
         <div class="card">
-            <img src="https://www.w3schools.com/w3images/avatar5.png" alt="Foto Peserta">
+            <img src="https://via.placeholder.com/80" alt="Participant Photo">
             <h2>Nama Peserta</h2>
-            <p>Peserta Kompetensi Sains Madrasah</p>
-            <div class="gender">Jenis Kelamin: Laki-laki/Perempuan</div>
-            <div class="education">Pendidikan: SMA/SMK/MA</div>
-            <div class="email">Email: peserta@example.com</div>
-            <div class="phone">Telepon: 08123456789</div>
+            <p class="email">Email: contoh@domain.com</p>
+            <p class="phone">No. HP: 081234567890</p>
+            <p class="gender">Jenis Kelamin: Laki-laki</p>
+            <p class="education">Pendidikan: SMA</p>
         </div>
     </div>
-
-    <a href="#" class="explore-button" id="exploreButton" aria-label="Explore Ternate">Ayook! Explore Ternate</a>
-
+    
+    <a href="#" class="explore-button" id="exploreButton">Explore Ternate</a>
+    
     <div class="additional-buttons" id="additionalButtons">
-        <a href="#" data-section="kuliner" class="section-button" aria-label="Kuliner">
-            <img src="https://img.icons8.com/ios-filled/50/000000/restaurant.png" alt="Kuliner Icon">
-            Kuliner
-        </a>
-        <a href="#" data-section="wisata-religi" class="section-button" aria-label="Wisata Religi">
-            <img src="https://img.icons8.com/ios-filled/50/000000/monument.png" alt="Wisata Religi Icon">
-            Wisata Religi
-        </a>
-        <a href="#" data-section="wisata-alam" class="section-button" aria-label="Wisata Alam">
-            <img src="https://img.icons8.com/ios-filled/50/000000/nature.png" alt="Wisata Alam Icon">
-            Wisata Alam
-        </a>
+        <a href="#" class="section-button" data-section="section1">Tentang Ternate</a>
+        <a href="#" class="section-button" data-section="section2">Kuliner Ternate</a>
+        <a href="#" class="section-button" data-section="section3">Wisata Ternate</a>
     </div>
 
-    <!-- Section Contents -->
-    <div id="kuliner" class="section">
+    <div class="section" id="section1">
+        <h2>Tentang Ternate</h2>
+        <p>Konten tentang Ternate...</p>
+    </div>
+
+    <div class="section" id="section2">
         <h2>Kuliner Ternate</h2>
-        <p>Konten mengenai kuliner khas Ternate akan ditampilkan di sini. Jelajahi berbagai makanan lezat yang ditawarkan oleh kota ini!</p>
+        <p>Konten tentang Kuliner Ternate...</p>
     </div>
 
-    <div id="wisata-religi" class="section">
-        <h2>Wisata Religi</h2>
-        <p>Konten mengenai tempat-tempat wisata religi di Ternate akan ditampilkan di sini. Temukan lokasi-lokasi yang memiliki nilai religius tinggi!</p>
+    <div class="section" id="section3">
+        <h2>Wisata Ternate</h2>
+        <p>Konten tentang Wisata Ternate...</p>
     </div>
 
-    <div id="wisata-alam" class="section">
-        <h2>Wisata Alam</h2>
-        <p>Konten mengenai wisata alam di Ternate akan ditampilkan di sini. Nikmati keindahan alam dan keajaiban alam yang ada di Ternate!</p>
-    </div>
-
-    <a href="#" class="back-button" id="backButton" aria-label="Kembali">Kembali</a>
+    <a href="#" class="back-button" id="backButton">Kembali</a>
 
     <script>
         // Show the card and explore button when the user clicks on "Mulai"
@@ -402,60 +404,59 @@
             document.getElementById('additionalButtons').style.display = 'none'; // Ensure additional buttons are hidden
             document.getElementById('backButton').style.display = 'none'; // Hide back button initially
         };
-    
+
         // Handle the Explore Ternate button click
         document.getElementById('exploreButton').addEventListener('click', function(event) {
             event.preventDefault(); // Prevent default link behavior
-    
+
             // Add fade-out animation to the explore button and card
             document.getElementById('cardContainer').style.animation = 'fadeOut 1s ease-out';
             this.style.animation = 'fadeOut 1s ease-out';
-    
+
             // Hide card and explore button after animation
             setTimeout(function() {
                 document.getElementById('cardContainer').style.display = 'none';
                 document.getElementById('exploreButton').style.display = 'none';
-    
+
                 // Show additional buttons and back button after hiding card and explore button
                 document.getElementById('additionalButtons').style.display = 'block';
                 document.getElementById('backButton').style.display = 'block';
             }, 1000); // Delay sesuai durasi animasi
         });
-    
+
         // Handle the back button click
         document.getElementById('backButton').addEventListener('click', function(event) {
             event.preventDefault(); // Prevent default link behavior
-    
+
             // Hide additional buttons and back button
             document.getElementById('additionalButtons').style.display = 'none';
             this.style.display = 'none';
-    
+
             // Hide all sections
             document.querySelectorAll('.section').forEach(section => {
                 section.style.display = 'none';
             });
-    
+
             // Show card and explore button
             document.getElementById('cardContainer').style.display = 'block';
             document.getElementById('exploreButton').style.display = 'inline-block';
         });
-    
+
         // Handle the section button click
         document.querySelectorAll('.section-button').forEach(button => {
             button.addEventListener('click', function(event) {
                 event.preventDefault(); // Prevent default link behavior
-    
+
                 // Hide all sections
                 document.querySelectorAll('.section').forEach(section => {
                     section.style.display = 'none';
                 });
-    
+
                 // Show the selected section
                 const sectionId = this.getAttribute('data-section');
                 document.getElementById(sectionId).style.display = 'block';
             });
         });
     </script>
-    
 </body>
 </html>
